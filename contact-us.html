@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Contact Us - Group 1</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Loading Bootstrap -->
+    <link href="css/vendor/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Loading Flat UI Pro -->
+    <link href="css/flat-ui.css" rel="stylesheet">
+    
+    <!-- Hano ni Custom CSS -->
+    <style type="text/css">
+      .navbar{
+        /*margin-top:2% !important; */
+      }  
+      .navbar a{
+        color: white !important;
+        font-weight: bold !important;
+        text-transform: Uppercase;
+      }
+      .navbar a:hover{
+        color:#34495e !important;
+        background-color: whitesmoke !important; 
+        text-transform: Uppercase;
+        font-weight: bolder !important;
+        transition:all 1s ease-in-out;
+      }      
+      .linkactive{
+        color:#34495e !important;
+        background-color: #ffd989 !important; 
+      }
+
+      .logo{
+        text-align: center;
+      }
+      #ourLogo img:hover{
+        -webkit-transform:rotate(360deg) !important;
+        transition: all 1s ease-in-out !important;
+      }
+      .navbar{
+        background-color: #feb615 !important;
+      }
+      .navbar-brand{
+        text-decoration: none !important;
+      }
+      .nameyaweb{
+        margin-left:10px !important;
+        margin-right:20px !important;
+        font-weight:bold !important;
+        font-size:15pt;
+      }
+      #navbarInput-01{
+        background-color: #ffd57c !important;
+        border:none !important;
+        color:white !important;
+    }
+      #navbarInput-01:focus{
+        border-left:2px solid #ffd57c;
+        border-top:2px solid #ffd57c;
+        border-bottom:2px solid #ffd57c;
+      }
+      .navbar-default .navbar-form .input-group-btn .btn{
+        background-color: #ffd57c !important;
+        border:none !important;
+       }
+       .dropdown-menu{
+        background-color: #ffd57c !important;
+       }
+       .dropdown-toggle{
+        color:white !important;
+       }
+       .yasearch{
+        margin-right:10px !important;
+       }
+       #Headings{
+        margin-left:13px !important; 
+       }
+       .tumenye{
+        color:white !important;
+       }
+        .izinaryabusiness{
+        color:white !important;
+        font-size: 16pt !important; 
+        font-family: Lato;
+        font-weight: bold !important;
+        
+       }
+       .aboutus{
+        color:white !important;
+       }
+       .inputdetails{
+        text-align: right !important; 
+        width:30% ; 
+       }
+       .inputsside{
+        width:60% !important;
+       }
+       #formseparator{
+        width:0% !important;
+        background-color:  red !important ;
+       }
+      .forminput{
+        margin-left:20px;
+        border-radius: 25px !important;
+      }
+      .forminput:focus{
+        margin-left:20px;
+        border-radius: 25px !important;
+        border:2px solid #feb615 !important;
+      }
+    </style>
+    <script type="text/javascript">
+
+function validate()
+{
+
+           if(document.myForm.phone.value.length != 10 )
+   {
+     alert( "Please provide a valid phone number with 10 digits." );
+   }
+   return( true );
+};
+</script>
+  </head>
+  <body style="background-image:url('images/background.png');">
+    <div class="container logo" id="ourLogo">
+        <a href="index.html" id="logolink">
+            <img src="images/chickenfarm.png" draggable="false" id="logo" width="340" height="340">
+        </a>
+    </div>
+    <div class="container" id="headernavbar">
+    <nav class="navbar navbar-default navbar-expand-lg" role="navigation">
+      <span class='nameyaweb'>UR CST Chicken Ltd.</span>
+<!--       <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbar-collapse-01"></button>
+ -->
+       <!-- <div class="collapse navbar-collapse" id="navbar-collapse-01"> -->
+        <ul class="nav navbar-nav mr-auto">
+          <li><a href="index.html#inyama"id="linktoinyama">Umusaruro</a></li>   
+          <li><a href="index.html#ubwokobwinkoko">Ubwoko bw'inkoko</a></li>
+          <li><a href="index.html#tumenye">Tumenye</a></li>
+          <li><a href="contact-us.html">Tuvugishe</a></li>
+        </ul>
+        <form class="navbar-form form-inline my-2 my-lg-0" action="#" role="search">
+          <div class="form-group yasearch">
+            <div class="input-group divyokurisearch">
+              <input class="form-control" id="navbarInput-01" type="search" placeholder="Search">
+              <span class="input-group-btn">
+                <button type="submit" class="btn yokurisearch"><span class="fui-search"></span></button>
+              </span>
+            </div>
+          </div>
+        </form>
+      </div>
+    </nav><!-- /Aho navbar irangirira -->
+</div>
+    <div class="container">
+      <div class="row">
+        <h5 id="Headings">Contact us</h5>
+      </div>
+      <div class="row">
+        <p id="Headings"> Please complete the form below</p>
+      </div><hr>
+      <div class="row">
+        <form name="myForm" onsubmit="return(validate());" class="col-md-7" style="border:2px solid grey !important; border-radius:10px; padding:30px 30px 30px 30px; margin:0% 20% 20% 20%"  >        
+          <table style="width:100% !important"> 
+        <tr>  
+          <td class="inputdetails" width="30%"><b>Name</b><br>Add your name</td>
+          <td class='inputsside'> <input type="text" class="form-control col-md-8 forminput" width="60%" placeholder="Urugero: KWIZERA Abraham"  required/> </td></tr>
+          <tr>
+          <td class="inputdetails"> <b>E-mail</b><br>Add a valid e-mail address </td><td class='inputsside'><input type="email" class="form-control col-md-8 forminput" width="60%" placeholder="ibrah@gmail.com"  required/> </td>
+        </tr>
+          <tr>
+          <td class="inputdetails"> <b>Gender</b><br>validate your gender </td><td class='inputsside'><input type="radio" name="optionsRadios1" value="Male" id="radio1" data-toggle="radio" style = "margin-left: 20px;">Male 
+          <input type="radio" value="Female" id="radio2" data-toggle="radio" style = "margin-left: 20px;"> Female
+        </td>
+        </tr>
+
+        <tr>
+          <td class="inputdetails"> <b>Phone</b><br>Add valid 10 digit phone number </td><td class='inputsside'><input type="number" id ="phone" class="form-control col-md-8 forminput phone" width="60%" placeholder="0788000000" maxlength="10"/> </td>
+        </tr>
+        <tr>
+          <td class="inputdetails"> <b>Web-site</b><br>Add your website URL </td><td class='inputsside'> <input type="url" class="form-control col-md-8 forminput" width="60%" placeholder="https://igihe.com"  required/></td>
+        </tr>
+        <tr>
+          <td class="inputdetails"> <b>Message</b><br>Write something to us </td><td class='inputsside'><textarea class="form-control col-md-8 forminput" width="60%" required/>  </textarea>
+          </td>
+        </tr>
+         <tr> 
+            <td style=""><input type="submit" class="btn btn-primary col-md-6" value="Submit" style="float:right;margin-top:20px !important;" /></td>
+            <td style=""><input type="reset" class="btn btn-danger col-md-4" value="Reset" style="margin-top:20px !important;
+margin-top:20px !important;" /></td>
+         </tr>
+        
+        
+      </table> 
+        </form>
+
+      </div>  
+
+        </div>
+
+
+    <script src="js/flat-ui.js"></script>
+
+  </body>
+</html>
